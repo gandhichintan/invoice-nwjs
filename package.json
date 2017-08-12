@@ -1,0 +1,62 @@
+{
+  "name": "light-bootstrap-dashboard-angular2",
+  "private": true,
+  "version": "1.2.0",
+  "scripts": {
+    "start": "tsc && concurrently \"npm run tsc:w\" \"nw src/\"",
+    "clean": "rm -Rf *.log *.js *.map app/*.js app/*.map",
+    "dev": "nw src/",
+    "prod": "nwbuild --platforms win32,win64,osx64,linux32,linux64 --buildDir dist/ src/",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings",
+    "postinstall": "typings install"
+  },
+  "engines": {
+    "node": "5.9.1"
+  },
+  "license": "MIT",
+ 
+  "keywords": [
+    "electron",
+    "node",
+    "angular2",
+    "desktop",
+    "hybrid"
+  ],
+  "author": "Chintan Gandhi",
+ 
+  "dependencies": {
+    "@angular/common": "~2.4.9",
+    "@angular/compiler": "~2.4.9",
+    "@angular/core": "~2.4.9",
+    "@angular/forms": "~2.4.9",
+    "@angular/http": "~2.4.9",
+    "@angular/platform-browser": "~2.4.9",
+    "@angular/platform-browser-dynamic": "~2.4.9",
+    "@angular/router": "~3.4.9",
+    "@angular/upgrade": "~2.4.9",
+    "angular-in-memory-web-api": "0.3.1",
+    "angular2-google-maps": "~0.17.0",
+    "chartist": "~0.9.8",
+    "jquery": "~3.1.1",
+    "ng-chartist": "1.1.0",
+    "reflect-metadata": "~0.1.8",
+    "rxjs": "5.0.1",
+    "systemjs": "~0.19.41",
+    "tsd": "^0.6.5",
+    "typings": "^2.1.1",
+    "zone.js": "^0.7.2"
+  },
+  "devDependencies": {
+    "@types/chartist": "~0.9.33",
+    "@types/core-js": "0.9.35",
+    "@types/jquery": "~2.0.34",
+    "@types/node": "~6.0.45",
+    "concurrently": "~3.0.0",
+    "lite-server": "~2.2.2",
+    "nw": "^0.18.8",
+    "nw-builder": "^3.4.1",
+    "typescript": "~2.0.3"
+  }
+}

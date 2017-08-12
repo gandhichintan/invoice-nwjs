@@ -1,0 +1,14 @@
+{
+  "name":"nw.js-example",
+  "main":"index.html",
+  "single-instance": false,
+  "window":{
+    "min_width":800,
+    "min_height":600,
+    "height":600,
+    "width":1024,
+    "icon":"assets/img/angular2-logo.png",
+    "toolbar":true,
+    "position":"center"
+  }
+}
